@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+.gradient-text {
+  background: linear-gradient(to right, #FFC107, #FF5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+body {
+  margin: 0;
+ 
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+a.active{
+  text-decoration: none;
+  font-weight: 700;
+  color: #F94A29;
+}
+
+
+.btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: #0588FD;
+  cursor: pointer;
+  transition: all 0.25s;
+  color: white;
+}
+.btn:hover {
+  border-color: #646cff;
+  background-color: #646cff;
+  transition: all ease-in;
+}
+.btn-pink{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: #ff127d;
+  cursor: pointer;
+  transition: all 0.25s;
+  color: white;
+}
+.btn-pink:hover {
+  border-color: slateblue;
+  
+  transition: all ease-in;
+}
+.btn-yellow{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: yellow;
+  cursor: pointer;
+  transition: all 0.25s;
+  color: black;
+}
+.btn-yellow:hover {
+  border-color: slateblue;
+  
+  transition: all ease-in;
+}
+.btn-red{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: red;
+  cursor: pointer;
+  transition: all 0.25s;
+  color: white;
+}
+.btn-red:hover {
+  border-color: slateblue;
+  
+  transition: all ease-in;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* spinner css */
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+@media only screen and(max-width:640px) {
+  .navbar-start{
+    width: 80% !important; 
+  }
+}
